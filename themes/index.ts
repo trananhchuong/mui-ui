@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, ThemeOptions } from '@mui/material/styles';
 
 // assets
 import colors from 'assets/scss/_themes-vars.module.scss';
@@ -12,8 +12,6 @@ import themeTypography from './typography';
  * Represent theme style and structure as per Material-UI
  * @param {JsonObject} customization customization parameter object
  */
-
-
 
 export const theme = () => {
   const color = colors;
@@ -45,7 +43,7 @@ export const theme = () => {
       },
     },
     typography: themeTypography(themeOption),
-  };
+  } as ThemeOptions;
 
   const themes = createTheme(themeOptions);
   themes.components = componentStyleOverrides(themeOption);
