@@ -1,5 +1,6 @@
-import Head from "next/head";
-import Link from "next/link";
+import { AdminLayout, MainLayout } from '@/layout';
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,12 +11,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div>
-        <h1>hihi</h1>
-
-        <Link href="/home"  >
-          About us
-        </Link>
+        <h1>This is homepage</h1>
+        <Link href="/about">About us</Link>
       </div>
     </>
   );
 }
+
+Home.Layout = MainLayout;
