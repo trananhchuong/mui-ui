@@ -1,4 +1,4 @@
-import { EmptyLayout } from '@/layout';
+import { EmptyLayout } from '@/components/layout';
 import { AppPropsWithLayout } from '@/models';
 import { ThemeProvider } from '@emotion/react';
 import { CssBaseline, StyledEngineProvider } from '@mui/material';

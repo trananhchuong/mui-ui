@@ -1,6 +1,36 @@
-export default function componentStyleOverrides(theme: any) {
+import { Components } from '@mui/material';
+
+export default function componentStyleOverrides(theme: any): Components {
   const bgColor = theme.colors?.grey50;
   return {
+    MuiContainer: {
+      defaultProps: {
+        maxWidth: 'md',
+      },
+      styleOverrides: {
+        maxWidthSm: {
+          maxWidth: '680px',
+
+          '@media (min-width: 600px)': {
+            maxWidth: '680px',
+          },
+        },
+        maxWidthMd: {
+          maxWidth: '860px',
+
+          '@media (min-width: 900px)': {
+            maxWidth: '860px',
+          },
+        },
+        maxWidthXl: {
+          maxWidth: '1470px',
+
+          '@media (min-width: 1536px)': {
+            maxWidth: '1470px',
+          },
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {

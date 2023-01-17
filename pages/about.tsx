@@ -1,7 +1,4 @@
-import { MainLayout } from '@/layout';
-import theme from '@/themes';
-import { Typography, useMediaQuery, useTheme } from '@mui/material';
-import { Box } from '@mui/system';
+import { MainLayout } from '@/components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -19,24 +16,6 @@ function About() {
       </Head>
 
       <h1>This is about page</h1>
-
-      <Typography
-        sx={{
-          // color: {
-          //   md: 'primary.main',
-          //   sm: 'red',
-          // },
-          [theme.breakpoints.between('sm', 'lg')]: {
-            backgroundColor: 'red',
-            color: "#fff"
-          },
-        }}
-        variant="h1"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veritatis ipsam. Alias,
-        neque recusandae. Ipsa ullam ut veniam ipsam magni ratione tempore perferendis nisi
-        exercitationem deserunt eaque autem, dolorem sapiente?
-      </Typography>
 
       <Link href="/">Home</Link>
     </>
