@@ -7,11 +7,19 @@ import colors from 'assets/scss/_themes-vars.module.scss';
 import componentStyleOverrides from './compStyleOverride';
 import themePalette from './palette';
 import themeTypography from './typography';
+import { Prompt } from '@next/font/google';
 
 /**
  * Represent theme style and structure as per Material-UI
  * @param {JsonObject} customization customization parameter object
  */
+
+export const prompt = Prompt({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  fallback: ['Roboto'],
+});
 
 export const theme = () => {
   const color = colors;
@@ -28,6 +36,9 @@ export const theme = () => {
     menuSelected: color.secondaryDark,
     menuSelectedBack: color.secondaryLight,
     divider: color.grey200,
+    customization: {
+      fontFamily: prompt.style.fontFamily,
+    },
   };
 
   const themeOptions = {
@@ -51,4 +62,4 @@ export const theme = () => {
   return themes;
 };
 
-export default theme;
+export default theme();
