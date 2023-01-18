@@ -213,5 +213,19 @@ export default function componentStyleOverrides(theme: any): Components {
         },
       },
     },
+    MuiLink: {
+      defaultProps: {
+        underline: 'none',
+      },
+      styleOverrides: {
+        root: {
+          color: 'black',
+          cursor: 'pointer',
+          '&:hover, &.active': {
+            color: '#FF6464',
+          },
+        },
+      },
+    },
   };
 }
