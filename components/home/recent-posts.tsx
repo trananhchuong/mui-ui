@@ -4,7 +4,6 @@ import { Box } from '@mui/system';
 import Link from 'next/link';
 import * as React from 'react';
 import { PostCard } from './post-card';
-// import { PostCard } from './post-card';
 
 export function RecentPosts() {
   const postList: Post[] = [
@@ -39,7 +38,7 @@ export function RecentPosts() {
         >
           <Typography variant="h5">Recent Posts</Typography>
 
-          <Link passHref href="/blog">
+          <Link passHref href="/blog" legacyBehavior>
             <MuiLink
               sx={{
                 display: { xs: 'none', md: 'inline' },
