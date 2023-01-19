@@ -211,11 +211,20 @@ export default function componentStyleOverrides(theme: any): Components {
     MuiChip: {
       styleOverrides: {
         root: {
-          '&.MuiChip-deletable .MuiChip-deleteIcon': {
-            color: 'inherit',
-          },
+          paddingInline: 2,
         },
       },
+      variants: [
+        {
+          props: { color: 'secondary' },
+          style: {
+            color: theme.paper,
+            backgroundColor: '#142850',
+            fontSize: 16,
+            fontWeight: 'bold',
+          },
+        },
+      ],
     },
     MuiTooltip: {
       styleOverrides: {
