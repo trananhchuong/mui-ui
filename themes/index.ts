@@ -2,7 +2,7 @@
 import colors from 'assets/scss/_themes-vars.module.scss';
 
 // project imports
-import { createTheme, ThemeOptions } from '@mui/material';
+import { createTheme, responsiveFontSizes, ThemeOptions } from '@mui/material';
 import { Prompt } from '@next/font/google';
 import componentStyleOverrides from './compStyleOverride';
 import themePalette from './palette';
@@ -61,4 +61,4 @@ export const theme = () => {
   return themes;
 };
 
-export default theme();
+export default responsiveFontSizes(theme());

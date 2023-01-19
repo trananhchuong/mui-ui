@@ -36,8 +36,20 @@ export default function componentStyleOverrides(theme: any): Components {
         root: {
           fontWeight: 500,
           borderRadius: '4px',
+
+          '&:hover': {
+            backgroundColor: theme.colors?.primaryMain,
+          },
         },
       },
+      variants: [
+        {
+          props: { variant: 'contained', color: 'primary' },
+          style: {
+            color: theme.colors?.paper,
+          },
+        },
+      ],
     },
     MuiPaper: {
       defaultProps: {
@@ -222,7 +234,7 @@ export default function componentStyleOverrides(theme: any): Components {
           color: 'black',
           cursor: 'pointer',
           '&:hover, &.active': {
-            color: '#FF6464',
+            color: theme.colors?.primaryMain,
           },
         },
       },
