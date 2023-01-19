@@ -13,7 +13,7 @@ export function MainLayout({ children }: LayoutProps) {
         <Container
           maxWidth="xl"
           sx={{
-            bgcolor: 'primary.main',
+            bgcolor: 'secondary.light',
           }}
         >
           XL Container

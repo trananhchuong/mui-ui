@@ -1,7 +1,6 @@
 import { EmptyLayout } from '@/components/layout';
 import { AppPropsWithLayout } from '@/models';
-import { ThemeProvider } from '@emotion/react';
-import { CssBaseline, StyledEngineProvider } from '@mui/material';
+import { CssBaseline, StyledEngineProvider, ThemeProvider } from '@mui/material';
 
 import { createEmotionCache } from '@/utils';
 import { CacheProvider } from '@emotion/react';

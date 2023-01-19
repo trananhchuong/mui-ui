@@ -1,13 +1,12 @@
-import { createTheme, ThemeOptions } from '@mui/material/styles';
-
 // assets
 import colors from 'assets/scss/_themes-vars.module.scss';
 
 // project imports
+import { createTheme, ThemeOptions } from '@mui/material';
+import { Prompt } from '@next/font/google';
 import componentStyleOverrides from './compStyleOverride';
 import themePalette from './palette';
 import themeTypography from './typography';
-import { Prompt } from '@next/font/google';
 
 /**
  * Represent theme style and structure as per Material-UI

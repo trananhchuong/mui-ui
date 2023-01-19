@@ -1,3 +1,4 @@
+import { HeroSection } from '@/components/home';
 import { AdminLayout, MainLayout } from '@/components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -13,6 +14,8 @@ export default function Home() {
       <div>
         <h1>This is homepage</h1>
         <Link href="/about">About us</Link>
+
+        <HeroSection />
       </div>
     </>
   );
