@@ -22,6 +22,10 @@ export function HeaderDesktop() {
               </MuiLink>
             </Link>
           ))}
+
+          <Link key={'login'} href={'/login'} legacyBehavior passHref>
+            <MuiLink sx={{ ml: 2, fontWeight: 'medium' }}>Login</MuiLink>
+          </Link>
         </Stack>
       </Container>
     </Box>
